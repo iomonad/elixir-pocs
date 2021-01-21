@@ -7,7 +7,7 @@ defmodule PhxChannelsWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_phx_channels_key",
-    signing_salt: "PgKnptqf"
+    signing_salt: "+wkirt5T"
   ]
 
   socket "/socket", PhxChannelsWeb.UserSocket,
@@ -32,7 +32,6 @@ defmodule PhxChannelsWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :phx_channels
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,

@@ -7,16 +7,13 @@
 # General application configuration
 use Mix.Config
 
-config :phx_channels,
-  ecto_repos: [PhxChannels.Repo]
-
 # Configures the endpoint
 config :phx_channels, PhxChannelsWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "6iZi+0KTeyOZfFf4GLM5Ja9RlQyNIE7Ey6rhjJ71HOyk8vPtJQNW3b3lUs1Bae46",
+  secret_key_base: "EFWArP8RDCZQLV1JtE1T1MF50+yro10185ISo0hN5oB/MHqOs4Ph/ogngSd1ovl0",
   render_errors: [view: PhxChannelsWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: PhxChannels.PubSub,
-  live_view: [signing_salt: "oiFKYMI2"]
+  live_view: [signing_salt: "Uq4fLEqM"]
 
 # Configures Elixir's Logger
 config :logger, :console,

@@ -7,8 +7,6 @@ defmodule PhxChannels.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      PhxChannels.Repo,
       # Start the Telemetry supervisor
       PhxChannelsWeb.Telemetry,
       # Start the PubSub system
